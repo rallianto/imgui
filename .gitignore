@@ -59,3 +59,22 @@ examples/example_sdl2_metal/example_sdl2_metal
 examples/example_sdl2_opengl2/example_sdl2_opengl2
 examples/example_sdl2_opengl3/example_sdl2_opengl3
 examples/example_sdl2_sdlrenderer/example_sdl2_sdlrenderer
+
+# Since I use premake, I shouldn't include project files
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+
+# Ignore Premake5 binaries and intermediate files
+*.make
+*.make.*
+*.sh
+Makefile
+makefile
+GMake/
+Premake/
+
+# Custom build folders
+bin/
+bin-int/
